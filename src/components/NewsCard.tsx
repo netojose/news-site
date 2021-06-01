@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { Link } from 'react-router-dom'
+import classnames from 'classnames'
 
+import Loader from './Loader'
 import { NewsSumaryItem } from '../utils/types'
 import placeholder from '../assets/images/placeholder.png'
 
@@ -9,17 +11,28 @@ export default function NewsCard({
 }: {
   item: NewsSumaryItem
 }): React.ReactElement {
+  const [imageLoaded, setImageLoaded] = useState<boolean>(false)
+  const handleSetLoaded = useCallback(() => setImageLoaded(true), [])
   return (
     <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <Link to={`/article${uri}`}>
-            <img
-              className="h-48 w-full object-cover md:w-48"
-              src={image ?? placeholder}
-              alt={excerpt ?? title}
-              loading="lazy"
-            />
+            <div className="h-48 w-full md:w-48">
+              {!imageLoaded && (
+                <div className="h-48 w-full md:w-48 bg-royalblue-100 flex justify-center items-center">
+                  <Loader />
+                </div>
+              )}
+              <img
+                className={classnames('h-48 w-full object-cover md:w-48', {
+                  invisible: !imageLoaded,
+                })}
+                src={image ?? placeholder}
+                alt={excerpt ?? title}
+                onLoad={handleSetLoaded}
+              />
+            </div>
           </Link>
         </div>
         <div className="p-8">

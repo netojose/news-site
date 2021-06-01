@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function GuestAdvice(): React.ReactElement {
   return (
-    <section className="w-1/3 m-auto p-5 shadow-md">
+    <section className="w-full sm:w-2/3 xl:w-1/3 m-auto p-5 shadow-md">
       <h2 className="text-2xl text-center">Warning</h2>
       <p>This section is just for members.</p>
       <p>

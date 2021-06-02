@@ -40,11 +40,11 @@ export default function Home(): React.ReactElement {
           {categories.map((category) => (
             <li
               key={category.slug}
-              className="bg-royalblue-400 h-12 rounded-md"
+              className="bg-royalblue-400 hover:bg-royalblue-600 transition ease-in-out duration-500 h-12 rounded-md"
             >
               <Link
                 to={`/category/${category.slug}`}
-                className="flex items-center justify-center h-full text-white text-2xl font-extrabold"
+                className="flex items-center justify-center h-full text-white text-md font-extrabold"
               >
                 {category.title}
               </Link>

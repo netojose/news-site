@@ -33,7 +33,7 @@ const MenuItem = ({
 export default function Navigation(): React.ReactElement {
   const appContext = useContext(AppContext)
   return (
-    <div className="flex flex-col md:flex-row px-0 md:px-10 justify-between items-center py-4 bg-royalblue-600">
+    <div className="flex flex-col md:flex-row md:px-10 justify-between items-center py-4 bg-royalblue-600">
       <div className="flex-shrink-0 flex items-center flex-col md:flex-row">
         <Link to="/" className="cursor-pointer">
           <span className="ml-1 text-3xl text-white font-semibold">
@@ -41,7 +41,7 @@ export default function Navigation(): React.ReactElement {
           </span>
         </Link>
         {appContext.user && (
-          <span className="text-white pl-10">
+          <span className="text-white md:pl-10">
             Hello, {appContext.user.name}
           </span>
         )}

@@ -14,7 +14,7 @@ export default function NewsCard({
   const [imageLoaded, setImageLoaded] = useState<boolean>(false)
   const handleSetLoaded = useCallback(() => setImageLoaded(true), [])
   return (
-    <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl hover:bg-gray-300 transition ease-in-out duration-500">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <Link to={`/article${uri}`}>

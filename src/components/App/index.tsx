@@ -29,7 +29,7 @@ function App(): React.ReactElement {
 
   return (
     <Router>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col h-screen" data-testid="app">
         <Navigation />
         <div className="container px-5 mx-auto flex-grow flex-shrink">
           <Routes />

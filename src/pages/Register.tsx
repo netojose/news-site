@@ -56,6 +56,7 @@ export default function Register(): React.ReactElement {
           name="email"
           type="email"
           placeholder="john.doe@company.com"
+          autocomplete="username"
           register={register}
           errors={errors}
         />

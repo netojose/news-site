@@ -55,6 +55,7 @@ export default function Login(): React.ReactElement {
           name="email"
           type="email"
           placeholder="john.doe@company.com"
+          autocomplete="username"
           register={register}
           errors={errors}
         />

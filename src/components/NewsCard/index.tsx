@@ -2,9 +2,9 @@ import React, { useCallback, useState } from 'react'
 import { Link } from 'react-router-dom'
 import classnames from 'classnames'
 
-import Loader from './Loader'
-import { NewsSumaryItem } from '../utils/types'
-import placeholder from '../assets/images/placeholder.png'
+import Loader from '../Loader'
+import { NewsSumaryItem } from '../../utils/types'
+import placeholder from '../../assets/images/placeholder.png'
 
 export default function NewsCard({
   item: { title, uri, excerpt, header, image },

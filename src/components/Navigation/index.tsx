@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-import AppContext from '../contexts/app'
+import AppContext from '../../contexts/app'
 
 const MenuItem = ({
   to,

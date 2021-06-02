@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
 
-import AppContext from '../contexts/app'
-import { ContextData } from '../utils/types'
+import AppContext from '../../contexts/app'
+import { ContextData } from '../../utils/types'
 
 export default function Providers({
   children,

@@ -65,6 +65,7 @@ export default function Register(): React.ReactElement {
           type="password"
           placeholder="******"
           register={register}
+          autocomplete="current-password"
           errors={errors}
         />
         <Button text="Create account" disabled={loading} />

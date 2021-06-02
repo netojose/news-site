@@ -64,6 +64,7 @@ export default function Login(): React.ReactElement {
           type="password"
           placeholder="******"
           register={register}
+          autocomplete="current-password"
           errors={errors}
         />
         <Button text="Login" />

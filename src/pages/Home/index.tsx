@@ -2,13 +2,13 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import loadable from '@loadable/component'
 
-import PageTitle from '../components/PageTitle'
-import Loader from '../components/Loader'
-import useApiFetch from '../hooks/useApiFetch'
-import { Category } from '../utils/types'
-import { getToken } from '../utils/auth'
+import PageTitle from '../../components/PageTitle'
+import Loader from '../../components/Loader'
+import useApiFetch from '../../hooks/useApiFetch'
+import { Category } from '../../utils/types'
+import { getToken } from '../../utils/auth'
 
-const GuestAdvice = loadable(() => import('../components/GuestAdvice'))
+const GuestAdvice = loadable(() => import('../../components/GuestAdvice'))
 
 export default function Home(): React.ReactElement {
   const [isGuest, setIsGuest] = useState<boolean>(false)

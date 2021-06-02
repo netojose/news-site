@@ -2,14 +2,15 @@ import React, { useCallback, useState, useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
-import AppContext from '../contexts/app'
-import PageTitle from '../components/PageTitle'
-import Form from '../components/Form/Form'
-import Input from '../components/Form/Input'
-import Button from '../components/Form/Button'
+import AppContext from '../../contexts/app'
+import PageTitle from '../../components/PageTitle'
+import Form from '../../components/Form/Form'
+import Input from '../../components/Form/Input'
+import Button from '../../components/Form/Button'
 
-import useApiFetch from '../hooks/useApiFetch'
-import { AuthResponse } from '../utils/types'
+import useApiFetch from '../../hooks/useApiFetch'
+import { AuthResponse } from '../../utils/types'
+import { setToken } from '../../utils/auth'
 
 interface Inputs {
   name: string
@@ -26,7 +27,7 @@ export default function Register(): React.ReactElement {
     method: 'post',
     onValidationError: setErrors,
     onSuccess: (data) => {
-      window.localStorage.setItem('token', data.token)
+      setToken(data.token)
       setContextData({ user: data.user })
       history.push('/')
     },

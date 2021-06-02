@@ -2,11 +2,11 @@ import React, { useMemo, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import dompurify from 'dompurify'
 
-import PageTitle from '../components/PageTitle'
-import Alert from '../components/Alert'
-import Loader from '../components/Loader'
-import useApiFetch from '../hooks/useApiFetch'
-import { NewsItem } from '../utils/types'
+import PageTitle from '../../components/PageTitle'
+import Alert from '../../components/Alert'
+import Loader from '../../components/Loader'
+import useApiFetch from '../../hooks/useApiFetch'
+import { NewsItem } from '../../utils/types'
 
 export default function Article(): React.ReactElement {
   const { slug } = useParams<{ slug: string }>()

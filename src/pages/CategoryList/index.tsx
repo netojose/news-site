@@ -1,13 +1,13 @@
 import React, { useMemo, useEffect, useCallback } from 'react'
 import { useParams, useLocation } from 'react-router-dom'
 
-import PageTitle from '../components/PageTitle'
-import Pagination from '../components/Pagination'
-import NewsCard from '../components/NewsCard'
-import Loader from '../components/Loader'
-import Alert from '../components/Alert'
-import useApiFetch from '../hooks/useApiFetch'
-import { CategoryList as CategoryListInterface } from '../utils/types'
+import PageTitle from '../../components/PageTitle'
+import Pagination from '../../components/Pagination'
+import NewsCard from '../../components/NewsCard'
+import Loader from '../../components/Loader'
+import Alert from '../../components/Alert'
+import useApiFetch from '../../hooks/useApiFetch'
+import { CategoryList as CategoryListInterface } from '../../utils/types'
 
 export default function CategoryList(): React.ReactElement {
   const { search } = useLocation()

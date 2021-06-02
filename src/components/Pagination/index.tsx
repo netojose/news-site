@@ -44,7 +44,10 @@ export default function Pagination({
   const showNext = page !== totalPages
 
   return (
-    <ul className="text-center space-x-2 flex items-center justify-center my-12">
+    <ul
+      className="text-center space-x-2 flex items-center justify-center my-12"
+      data-testid="pagination"
+    >
       <PageLinkWrapper show={showFirst}>
         <PageLink page={1} linkBuilder={linkBuilder} text="«" />
       </PageLinkWrapper>

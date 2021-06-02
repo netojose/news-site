@@ -26,7 +26,11 @@ export default function Input({
   const error = errors[name]
   return (
     <div className="mb-6">
-      <label htmlFor={name} className="mb-3 block text-gray-700">
+      <label
+        htmlFor={name}
+        className="mb-3 block text-gray-700"
+        data-testid="input-label"
+      >
         {label}:
       </label>
       <input
@@ -41,8 +45,13 @@ export default function Input({
         autoComplete={autoComplete}
         autoFocus={autoFocus}
         {...register(name)}
+        data-testid="input"
       />
-      {error && <span className="text-xs text-error">{error}</span>}
+      {error && (
+        <span className="text-xs text-error" data-testid="input-error">
+          {error}
+        </span>
+      )}
     </div>
   )
 }

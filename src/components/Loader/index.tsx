@@ -10,7 +10,7 @@ export default function Loader({
   show?: boolean
 }): React.ReactElement | null {
   return show ? (
-    <div className="flex justify-center my-20">
+    <div className="flex justify-center my-20" data-testid="loader">
       <Ball bounce="animate-bounce" />
       <Ball bounce="animate-bounce200" />
       <Ball bounce="animate-bounce400" />

@@ -50,13 +50,14 @@ export default function Register(): React.ReactElement {
           placeholder="John Doe"
           register={register}
           errors={errors}
+          autoFocus
         />
         <Input
           label="Email address"
           name="email"
           type="email"
           placeholder="john.doe@company.com"
-          autocomplete="username"
+          autoComplete="username"
           register={register}
           errors={errors}
         />
@@ -66,7 +67,7 @@ export default function Register(): React.ReactElement {
           type="password"
           placeholder="******"
           register={register}
-          autocomplete="current-password"
+          autoComplete="current-password"
           errors={errors}
         />
         <Button text="Create account" disabled={loading} />

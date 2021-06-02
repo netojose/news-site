@@ -9,7 +9,8 @@ export default function Input({
   placeholder,
   type = 'text',
   required = false,
-  autocomplete,
+  autoFocus,
+  autoComplete,
   errors = {},
 }: {
   label: string
@@ -18,7 +19,8 @@ export default function Input({
   placeholder?: string
   type?: 'text' | 'email' | 'password'
   required?: boolean
-  autocomplete?: string
+  autoFocus?: boolean
+  autoComplete?: string
   errors?: Record<string, string>
 }): React.ReactElement {
   const error = errors[name]
@@ -36,7 +38,8 @@ export default function Input({
         )}
         placeholder={placeholder}
         required={required}
-        autoComplete={autocomplete}
+        autoComplete={autoComplete}
+        autoFocus={autoFocus}
         {...register(name)}
       />
       {error && <span className="text-xs text-error">{error}</span>}

@@ -55,9 +55,10 @@ export default function Login(): React.ReactElement {
           name="email"
           type="email"
           placeholder="john.doe@company.com"
-          autocomplete="username"
+          autoComplete="username"
           register={register}
           errors={errors}
+          autoFocus
         />
         <Input
           label="Password"
@@ -65,7 +66,7 @@ export default function Login(): React.ReactElement {
           type="password"
           placeholder="******"
           register={register}
-          autocomplete="current-password"
+          autoComplete="current-password"
           errors={errors}
         />
         <Button text="Login" />

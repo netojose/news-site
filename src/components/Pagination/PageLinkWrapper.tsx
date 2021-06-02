@@ -15,6 +15,7 @@ export default function PageLinkWrapper({
       className={classnames('w-10 h-10 rounded-full', {
         'hidden md:inline': hideOnSmallScreens,
       })}
+      data-testid="page-link-wrapper"
     >
       {children}
     </li>

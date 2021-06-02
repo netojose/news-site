@@ -26,7 +26,7 @@ export default function PageLink({
   )
 
   return (
-    <Link className={className} to={linkBuilder(page)}>
+    <Link className={className} to={linkBuilder(page)} data-testid="page-link">
       {text ?? page}
     </Link>
   )

@@ -1,11 +1,12 @@
 import { createContext } from 'react'
 
-import { User, ContextData } from '../utils/types'
+import { ContextData } from '../utils/types'
 
-export default createContext<{
-  user: User | null
+type AppContext = ContextData & {
   setContextData: ({ user }: ContextData) => void
-}>({
+}
+
+export default createContext<AppContext>({
   user: null,
   setContextData: ({ user }: ContextData): void => undefined,
 })

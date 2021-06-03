@@ -5,6 +5,10 @@
 - Source code: https://github.com/netojose/news-site
 - Production URL: https://news-site-theta.vercel.app
 
+## Integration
+
+This project works interacting with this API: https://github.com/netojose/news-api
+
 ## Project hosting
 
 This project is hosted on Vercel.

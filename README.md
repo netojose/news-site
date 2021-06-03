@@ -45,7 +45,7 @@ $ yarn build
 
 ## About the project
 
-This was my first contact with [Tailwind CSS](https://tailwindcss.com), and I liked of the result. I decided to learn something new while creating this challenge, instead of use tools I already familiar with. Normally for this case, I use some CSS in JS approach for styling.
+This was my first contact with [Tailwind CSS](https://tailwindcss.com), and I liked of the result. I decided to learn something new while creating this challenge, instead of use tools I already familiar with. Normally for this case, I use some CSS in JS approach for styling. The application is responsive, of course.
 
 ## Pending work
 

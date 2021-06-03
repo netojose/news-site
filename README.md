@@ -1,30 +1,49 @@
 # News Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## URL's
 
-## Available Scripts
+- Source code: https://github.com/netojose/news-site
+- Production URL: https://news-site-theta.vercel.app
 
-In the project directory, you can run:
+## Project hosting
 
-### `yarn start`
+This project is hosted on Vercel.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tests
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Unit tests report](https://i.ibb.co/x2vQTVC/Screenshot-2021-06-02-at-21-14-33.png 'Unit tests report')
 
-### `yarn test`
+## Used technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Create React App](https://create-react-app.dev)
+- [Loadable components](https://loadable-components.com)
+- [Jest](https://jestjs.io)
+- [Axios](https://axios-http.com)
+- [React Hook Form](https://react-hook-form.com)
+- [React Router](https://reactrouter.com)
+- [TypeScript](https://www.typescriptlang.org)
+- [ESLint](https://eslint.org)
 
-### `yarn build`
+## Build setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```batch
+# install dependencies
+$ yarn install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# run tests
+$ yarn test
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# build for production
+$ yarn build
+```
+
+## About the project
+
+This was my first contact with [Tailwind CSS](https://tailwindcss.com), and I liked of the result. I decided to learn something new while creating this challenge, instead of use tools I already familiar with. Normally for this case, I use some CSS in JS approach for styling.
+
+## Pending work
+
+- Write intgration tests for testing all process (I like to use [Cypress](https://www.cypress.io/)).
+- On unit tests, write more tests, mocking fetch.
